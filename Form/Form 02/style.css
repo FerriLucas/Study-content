@@ -1,0 +1,60 @@
+body{
+    background-image: url('imagem/back.jfif');
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: blue;
+}
+
+#container{
+    width: 60%;
+    background-color: rgba(255,255,255,0.28);
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container h2 {
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+input,select,textarea{
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 22px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 4px solid purple;
+}
+
+#estado{
+    width: 82%;
+}
+
+.enviar,.cancelar{
+    display: inline-block;
+    width: 200px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    background-color: rgb(1,178,1);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    transition: 1s;
+}
+.cancelar{
+    background-color: red;
+}
+
+.enviar:hover{
+    background-color: royalblue;
+}
+
+
+.cancelar:hover{
+    background-color: purple;
+}

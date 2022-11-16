@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    background: #d3d3d3;
+    display: flex;
+
+    /* Vertical */
+    align-items: center;
+    /* Horizontal */
+    justify-content: center;
+    /* Distância do topo (1em=16px) */
+    padding: 50px;
+}
+
+.calc {
+    border-radius: 10px;
+    width: 400px;
+    background: #575757;
+    /* Espaçamento entre botões */
+    padding: 8px;
+    color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+}
+.calc h3 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.operations {
+    /* Resultado da direita para a esquerda */
+    text-align: right;
+}
+
+.PrevOperat, .CurrOperat {
+    color: #c4c4c4;
+    padding: 4px;
+    /* Os numeros informados não saem da "caixa" */
+    overflow: break-word;
+}
+
+.PrevOperat {
+    font-size: 26px;
+    /* Altura minima (Simular o espaço (altura) sem o numero informado)*/
+    min-height: 40px;
+}
+.CurrOperat {
+    font-size: 48px;
+    /* Altura minima (Simular o espaço (altura) sem o numero informado)*/
+    min-height: 70px;
+    font-weight: 700;
+}
+
+.ContainerBtn {
+    border-radius: 10px;
+    display: grid;
+    /* Dividir as colunas em 4 frações */
+    /* Cada DIV dentro da classe ocupa 01 coluna do total de colunas fracionadas */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Espaço entre os "Botões" */
+    gap: 3px;
+}
+
+.ContainerBtn button {
+    cursor: pointer;    height: 64px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    color: #c4c4c4;
+    transition: 0.4s;
+}
+
+.ContainerBtn .numb {
+    /*  */
+    background: #111111;
+}
+.ContainerBtn .numb:hover {
+    background: #323232;
+}
+
+.ContainerBtn .operat {
+    background: #323232;
+}
+.ContainerBtn .operat:hover {
+    background: #111111;
+}
+
+.ContainerBtn .EqualBtn {
+    background: linear-gradient(100deg, #111111 1%, #323232 99%);
+    /* Oculpa duas colunas */
+    grid-column: span 2;
+}
+.ContainerBtn .EqualBtn:hover {
+    background: #75a5cb;
+}

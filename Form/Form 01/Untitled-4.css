@@ -1,0 +1,123 @@
+*{
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #444444;
+
+    background-color: rgb(234, 230, 230);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    background-color: #444444;
+    height: 250px;
+    width: 500px;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.loginlogo{
+    padding: 20px 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+input[type="text"]{
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+#envcan{
+    width: 80%;
+    margin-bottom: 10px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Input Login */
+#login{
+    border: 0.8px solid black;
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+#login:hover{
+    background: rgb(196, 196, 196);
+}
+#login:hover::placeholder{
+    color: aliceblue;
+}
+#login:hover:focus{
+    color: aliceblue;
+}
+/* Input Login */
+
+/* Input Senha */
+#senha{
+    border: 0.8px solid black;
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+#senha:hover{
+    background: rgb(196, 196, 196);
+}
+#senha:hover::placeholder{
+    color: aliceblue;
+}
+#senha:hover:focus{
+    color: aliceblue;
+}
+/* Input Senha */
+
+/* Botão Enviar */
+#enviar{
+    border: 0.8px solid black;
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 45%;
+}
+#enviar:hover{
+    background: rgb(196, 196, 196);
+    color: rgb(68, 168, 249);
+    transform: scale(1);
+    box-shadow: 0 0 60px rgba(68, 168, 249, .64);
+    cursor: pointer;
+    border: 1px solid rgb(150, 215, 40);
+    font-size: 14px;
+}
+/* Botão Enviar */
+
+/* Botão Cadastrar */
+#cancelar{
+    border: 0.8px solid black;
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 45%;
+}
+#cancelar:hover{
+    background: rgb(196, 196, 196);
+    color: rgb(68, 168, 249);
+    transform: scale(1);
+    box-shadow: 0 0 60px rgba(68, 168, 249, .64);
+    cursor: pointer;
+    border: 1px solid rgb(150, 215, 40);
+    font-size: 14px;
+}
+/* Botão Cadastrar */

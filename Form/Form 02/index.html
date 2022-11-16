@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhe Conosco</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+ 
+    <div id="container">
+        <h2>Trabalhe Conosco</h2>
+
+        <form>
+ 
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            <input type="number" name="cpf" id="cpf" placeholder="Digite seu CPF" required>
+            <input type="number" name="fone" id="fone" placeholder="Digite seu Telefone" required>
+
+            <select name="estado" id="estado">
+                <option value="NO" selected disabled>Selecione um Estado</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RS">Rio Grande do Sul</option>
+            </select>
+
+            <textarea name="texto" id="texto" cols="30" rows="10" placeholder="Envie sua mensagem"></textarea>
+
+            <button type="submit" class="enviar">Enviar</button>
+            <button type="reset" class="cancelar">Cancelar</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

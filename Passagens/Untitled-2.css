@@ -1,0 +1,245 @@
+*{
+    font-family: 'Roboto', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset Geral */
+
+body{
+    color: #444444;
+}
+
+section{
+    padding: 3rem 0 4rem 0;
+}
+
+.gray{
+    background-color: rgb(244, 244, 244);
+}
+/* Header */
+header{
+    height: 200px;
+    background-color: rgb(234, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid gray;
+}
+
+.logo img{
+    width: 180px;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.login button{
+    border: none;
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.login button:hover{
+    background: transparent;
+    color: rgb(68, 168, 249);
+    transform: scale(1);
+    box-shadow: 0 0 60px rgba(68, 168, 249, .64);
+    cursor: pointer;
+    border: 2px solid rgb(68, 168, 249);
+}
+.prima{
+    font-size: 80px;
+}
+
+input[type=email], input[type=password]{
+    border: none;
+    padding: 0.7em;
+    border-radius: 10px;
+    width: 120px;
+    background-color: rgb(160, 160, 160);
+    margin-left: 5px;
+}
+input[type=email]::placeholder, input[type=password]::placeholder{
+    color: aliceblue;
+}
+input[type=email]:focus, input[type=password]:focus{
+    color: aliceblue;
+}
+input[type=email]:hover, input[type=password]:hover{
+    background-color: rgb(196, 196, 196);
+}
+
+.button{
+    cursor: pointer;
+    border: 2px solid rgb(150, 215, 40);
+    background-color: rgb(68, 168, 249);
+    padding: 0.7em;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* Principal */
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.hero{
+    width: 80%;
+    margin: 0 auto;
+}
+p{
+    margin: 1rem 0 0 25px;
+    font-size: 1,5rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+.botoes{
+    margin: 2rem 0;
+    display: flex;
+}
+.button:hover{
+    opacity: 0.9;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 100, .3);
+}
+.button{
+    padding: 10px 25px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #1788df;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3);
+}
+/* Sessão de cartões */
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.card{
+    cursor: pointer;
+    /*Cursor "mãozinha"*/
+    display: flex;
+    /*Alinhar os itens horizontalmente*/
+    flex-direction: column;
+    /**/
+    justify-content: center;
+    /*Alinha o conteudo ao centro do eixo X*/
+    height: 50px;
+    /**/
+    width: 12%;
+    /**/
+    background-color: rgb(150, 215, 40);
+    /**/
+    border: 2px solid rgb(68, 168, 249);
+    /**/
+    border-radius: 20px;
+    /**/
+    text-align: center;
+    /**/
+    align-items: center;
+    /*Alinha o conteudo ao eixo Y*/
+    color: aliceblue;
+    /*Cor da fonte "texto"*/
+    font-size: 1rem;
+    /*Tamanho da fonte "texto"*/
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3);
+    /*Sombra "flutuando"*/
+}
+.card:hover{
+    opacity: 0.9;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .30);
+    transform: translateY(-10px);
+}
+
+/* Fotos */
+
+.members{
+    padding-top: 20px;
+    display: flex;
+    /*Alinhar os itens horizontalmente*/
+    justify-content: space-between;
+    /*Alinhar o conteudo no eixo X (space-between) espaçadamente*/
+
+}
+.member{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    /*Alinha os itens um abaixo do outro*/
+    align-items: center;
+}
+.member h3{
+    padding-top: 10px;
+}
+.member img{
+    width: 150px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .3);
+}
+.member img:hover{
+    opacity: 0.9;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .30);
+    transform: scale(1.1);
+    /*Aumenta o item ao passar o cursor*/
+}
+
+/* Footer*/
+
+footer{
+    background-color: #b3aeae;
+}
+footer ul{
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    /* Remove os "pontos" da lista*/
+}
+
+.con{
+    padding-top: 10px;
+    display: flex;
+    /*Alinhar os itens horizontalmente*/
+    flex-direction: column;
+    /*Alinha os itens um abaixo do outro*/
+    align-items: center;
+    /*Alinha o conteudo ao eixo Y*/
+    justify-content: center;
+    /*Alinha o conteudo ao centro do eixo X*/
+    width: 50px;
+}
+.con:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.acon{
+    cursor: pointer;
+}
+
+.copy{
+    padding: 1rem 0;
+    color: aliceblue;
+    text-align: center;
+}
+.copy a{
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+.copy a:hover{
+    font-size: large;
+    color: black;
+}
