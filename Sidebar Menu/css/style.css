@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr00: rgb(68, 68, 68);
+    --clr01: rgb(245, 245, 245);
+    --clr03: rgb(111, 25, 169);
+    --clrBlack: rgb(0, 0, 0);
+    
+    --clrA: rgb(165, 47, 222);
+    --clrB: rgb(162,52,199);
+    --clrC: rgb(191,47,222);
+}
+
+body {
+    background: rgb(235, 235, 235);
+    cursor: default;
+}
+
+.navigation {
+    position: fixed;
+    background: var(--clr01);
+    width: 75px;
+    inset: 20px 0 20px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.302);
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation.active {
+    width: 250px;
+}
+
+/* color: #6f19a9 ; */
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.302);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 23px;
+}
+.menu::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--clr00);
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+.menu::after {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: var(--clr00);
+    transition: 0.5s;
+    transform: translateY(8px);
+    box-shadow: 0 -8px 0 var(--clr00);
+}
+
+.navigation.active .menu::before {
+    transform: translateY(0px) rotate(45deg);
+}
+.navigation.active .menu::after {
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0 0 var(--clr00);
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.navigation ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icon {
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    line-height: 60px;
+    color: var(--clrBlack);
+    font-size: 28px;
+    transition: 0.5s;
+}
+.navigation ul li.inside a .icon {
+    color: var(--clr01);
+    background: var(--clr03);
+    /* background: var(--clr:); */
+}
+
+.navigation ul li.inside a .icon::before {
+    opacity: 0.5;
+}
+.icon::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr03);
+    filter: blur(8px);
+    opacity: 0;
+    transition: 0.5s;
+}
+.bi::before {
+    filter: blur(0px);
+}
